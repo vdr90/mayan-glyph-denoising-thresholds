@@ -37,15 +37,19 @@ Researchers wishing to obtain access to the original images should contact the r
 
 ## Repository structure
 
-| File | Description |
-|---|---|
-| `generate_structured_noise.ipynb` | Generates structured occlusion configurations for the denoising experiments. |
-| `denoising_structured.ipynb` | Defines, trains, and evaluates convolutional autoencoders under structured noise. |
-| `denoising_salt_pepper.ipynb` | Trains and evaluates a compact autoencoder under diffuse pixel corruption. |
-| `requirements.txt` | Lists the Python dependencies used in the project. |
-| `.gitignore` | Excludes restricted datasets, images, trained model files, and local outputs. |
+## Repository structure
 
-The notebooks have been prepared without embedded execution outputs to prevent the accidental distribution of restricted glyph images.
+| File or directory | Description |
+|---|---|
+| `generate_structured_noise.ipynb` | Generates structured occlusion datasets using different patch counts and sizes. |
+| `generate_gaussian_noise.ipynb` | Generates datasets with salt-and-pepper noise at different intensity levels. |
+| `denoising_structured.ipynb` | Defines and evaluates the compact and high-capacity convolutional autoencoders under structured noise. |
+| `denoising_salt_pepper.ipynb` | Contains the original training and evaluation workflow for the diffuse-noise experiments. |
+| `requirements.txt` | Lists the Python dependencies required by the project. |
+| `README.md` | Documents the research workflow, installation, data restrictions, and reproduction instructions. |
+| `.gitignore` | Excludes restricted datasets, images, trained models, and temporary files. |
+
+The data/ directory is maintained locally and excluded from version control. A local models/ directory may optionally be used for testing previously trained models; it is not required for training models from scratch and is also excluded from version control.
 
 ## Experimental methodology
 
@@ -113,7 +117,11 @@ The archived experiments use a held-out subset as the validation dataset during 
 
 ## Installation
 
-Clone the repository and install the dependencies using Python:
+## Installation
+
+The notebooks were tested locally on macOS using Python 3.11.13 in the `glifos` environment.
+
+Clone the repository and install the required dependencies:
 
 ```bash
 git clone https://github.com/vdr90/mayan-glyph-denoising-thresholds.git
@@ -121,9 +129,11 @@ cd mayan-glyph-denoising-thresholds
 python -m pip install -r requirements.txt
 ```
 
-For notebook execution, a Jupyter-compatible Python environment is required.
+Open the repository in Visual Studio Code or Jupyter and select a Python environment with the required packages installed.
 
-The dependency list documents the main packages used in the project. Exact historical package versions have not yet been recovered.
+The original research environment included TensorFlow, Keras, NumPy, pandas, Matplotlib, scikit-learn, scikit-image, and seaborn.
+
+The exact package versions used in the original experiments have not yet been fully documented. Consequently, compatibility with all versions of these packages is not guaranteed.
 
 ## Reproducing the experiments
 
