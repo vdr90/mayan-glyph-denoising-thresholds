@@ -218,3 +218,50 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# Mayan Glyph Denoising Project
+# Restricted research data and model files
+# ==========================================
+
+# INAH / AJIMAYA datasets
+data/
+imgs/
+datasets/
+images/
+
+# Image and numerical data files
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.csv
+
+# Trained models and checkpoints
+*.keras
+*.h5
+*.hdf5
+*.ckpt
+*.weights.h5
+
+# Image files
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+*.webp
+*.pdf
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local experiment outputs
+outputs/
+checkpoints/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+._*
