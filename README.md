@@ -1,6 +1,6 @@
 # Quantifying Denoising Thresholds for Mayan Hieroglyphic Images with Convolutional Autoencoders
 
-**Authors:** Valeria Durán-Rubio and Edgar Román-Rangel  
+**Authors:** Valeria Durán-Rubio and Edgar Roman-Rangel  
 **Institution:** Instituto Tecnológico Autónomo de México (ITAM), Mexico  
 **Research area:** Computer vision, cultural heritage, image restoration, deep learning
 
