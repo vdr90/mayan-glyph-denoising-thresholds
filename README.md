@@ -37,8 +37,6 @@ Researchers wishing to obtain access to the original images should contact the r
 
 ## Repository structure
 
-## Repository structure
-
 | File or directory | Description |
 |---|---|
 | `generate_structured_noise.ipynb` | Generates structured occlusion datasets using different patch counts and sizes. |
@@ -76,7 +74,7 @@ Patch placement is randomized. The notebook contains the implementation used to 
 
 The diffuse-corruption experiments use pixel-level perturbations stored in precomputed image arrays.
 
-The historical experiment files correspond to noise factors of **0.20, 0.39, and 0.60**. The intermediate factor is approximately 0.40.
+The historical experiment files correspond to noise factors of **0.20, 0.40, and 0.60**.
 
 Some original file and variable names retain the term `gauss` for compatibility with the experimental workflow. These names should not, by themselves, be interpreted as a definition of the noise distribution.
 
@@ -117,9 +115,7 @@ The archived experiments use a held-out subset as the validation dataset during 
 
 ## Installation
 
-## Installation
-
-The notebooks were tested locally on macOS using Python 3.11.13 in the `glifos` environment.
+The notebooks were tested locally using Python 3.11.13.
 
 Clone the repository and install the required dependencies:
 
@@ -168,11 +164,9 @@ If you use this repository, please cite the associated research article once its
 
 ## Funding
 
-This research was partially supported by the División Académica de Ciencias Exactas of the Instituto Tecnológico Autónomo de México (ITAM), Mexico.
+This research was partially supported by the División Académica de Ciencias Exactas of the Instituto Tecnológico Autónomo de México (ITAM), Mexico, and La Asociación Mexicana de Cultura, A.C.
 
 ## License
-
-A software license has not yet been selected. The repository is currently maintained privately while the authors review code-sharing permissions and publication requirements.
 
 The dataset and associated imagery are not covered by any prospective software license for this repository.
 
